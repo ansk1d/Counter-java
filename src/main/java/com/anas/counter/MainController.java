@@ -31,6 +31,6 @@ public class MainController {
     @RequestMapping("/delet")
     public String delet(HttpSession session){
         session.removeAttribute("count");
-        return "index.jsp";
+        return "redirect:/";
     }
 }
